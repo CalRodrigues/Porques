@@ -1,0 +1,33 @@
+@use 'variables'
+
+@mixin flex-center
+  display: flex
+  justify-content: center
+  align-items: center
+  
+@mixin button
+  background: white
+  color: variables.$primary-color
+  font-weight: 700
+  text-transform: uppercase
+  border: 1px solid variables.$light-02
+  box-shadow: 2px 2px 5px rgba(62, 62, 63, 0.171)
+  border-radius: .5rem
+  padding:  1.2rem 3rem
+  display: inline-block
+  transition: background 300ms
+  
+@mixin cards
+  display: flex
+  flex-wrap: wrap
+  gap: 3rem
+
+@mixin card
+  background: variables.$bg-color
+  text-align: left
+  border: 1px solid variables.$light-02
+  box-shadow: 2px 2px 5px rgba(62, 62, 63, 0.171)
+  border-radius: 0.5rem
+  padding: 3rem
+  width: 47%
+  flex-grow: 1

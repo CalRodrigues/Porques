@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F7F9FA;
+  font-size: 1.6rem;
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+}
+body a {
+  text-decoration: none;
+}
+body ul {
+  list-style: none;
+}
+body::-webkit-scrollbar {
+  width: 1.1rem;
+  border: 1px solid #F7F9FA;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(117, 167, 194, 0.6);
+  border-radius: 6px;
+}
+
+.wrapper {
+  width: min(136rem, 100%);
+  margin-inline: auto;
+  padding-inline: 15rem;
+}
+
+section {
+  padding-block: 10rem;
+}
+section header h4 {
+  color: #134D6D;
+  text-transform: uppercase;
+}
+section header h2 {
+  color: #75a7c2;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 150%;
+}
+
+.menu {
+  heigth: 6vh;
+}
+.menu .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-logo {
+  color: #134D6D;
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+.menu-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 94vh;
+}
+#header h1 {
+  color: #134D6D;
+  font-weight: 700;
+  font-size: 12rem;
+  line-height: 110%;
+  width: 66.1rem;
+  margin-bottom: 4rem;
+}
+#header p {
+  color: #134D6D;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 110%;
+}
+
+#diferenca {
+  background: white;
+}
+#diferenca header h4 {
+  margin-bottom: 6rem;
+}
+#diferenca .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+#diferenca .cards .card {
+  background: #F7F9FA;
+  text-align: left;
+  border: 1px solid rgba(117, 167, 194, 0.6);
+  box-shadow: 2px 2px 5px rgba(62, 62, 63, 0.171);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  width: 47%;
+  flex-grow: 1;
+}
+#diferenca .cards .card h3 {
+  color: #134D6D;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+#diferenca .cards .card p {
+  color: #134D6D;
+  margin-bottom: 1rem;
+}
+#diferenca .cards .card p:last-child {
+  margin-bottom: 0;
+}
+
+#exercicio .wrapper {
+  display: grid;
+  grid-template-columns: 67.9rem 1fr;
+  grid-template-areas: "A B";
+}
+#exercicio .wrapper .col-a {
+  grid-area: A;
+  text-align: left;
+}
+#exercicio .wrapper .col-a header h4 {
+  margin-bottom: 1rem;
+}
+#exercicio .wrapper .col-a header h2 {
+  width: 59rem;
+  margin-bottom: 6rem;
+}
+#exercicio .wrapper .col-a .content p {
+  color: #134D6D;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 6rem;
+  width: 63.2rem;
+}
+#exercicio .wrapper .col-a .content .button {
+  background: white;
+  color: #134D6D;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid rgba(117, 167, 194, 0.6);
+  box-shadow: 2px 2px 5px rgba(62, 62, 63, 0.171);
+  border-radius: 0.5rem;
+  padding: 1.2rem 3rem;
+  display: inline-block;
+  transition: background 300ms;
+}
+#exercicio .wrapper .col-a .content .button:hover {
+  background: #134D6D;
+  color: white;
+  border-color: #134D6D;
+}
+#exercicio .wrapper .col-b {
+  grid-area: B;
+  align-self: center;
+  justify-self: end;
+  width: 22.4rem;
+}
+
+#footer {
+  background: #134D6D;
+  color: white;
+  padding-block: 3rem;
+}
+#footer a {
+  color: white;
+}
+#footer a:hover {
+  color: #A2CBEB;
+}
+
+#backToTopButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms;
+  transform: translateY(100%);
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=style.css.map */
