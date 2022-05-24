@@ -70,7 +70,7 @@ section header h2 {
   justify-content: space-between;
 }
 .menu-logo {
-  color: #134D6D;
+  color: #75a7c2;
   font-size: 4.8rem;
   font-weight: 700;
 }
@@ -79,6 +79,27 @@ section header h2 {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+.menu-nav a {
+  color: #75a7c2;
+  font-weight: 600;
+  transition: 300ms;
+}
+.menu-nav a:hover {
+  color: #134D6D;
+}
+.menu-nav a::after {
+  content: "";
+  background: #134D6D;
+  width: 0%;
+  height: 2px;
+  display: block;
+  position: relative;
+  bottom: -0.6rem;
+  transition: width 0.2s;
+}
+.menu-nav a:hover::after {
+  width: 100%;
 }
 
 #header {
@@ -121,7 +142,7 @@ section header h2 {
   box-shadow: 2px 2px 5px rgba(62, 62, 63, 0.171);
   border-radius: 0.5rem;
   padding: 3rem;
-  width: 47%;
+  width: 45%;
   flex-grow: 1;
 }
 #diferenca .cards .card h3 {
@@ -165,7 +186,7 @@ section header h2 {
 }
 #exercicio .wrapper .col-a .content .button {
   background: white;
-  color: #134D6D;
+  color: #75a7c2;
   font-weight: 700;
   text-transform: uppercase;
   border: 1px solid rgba(117, 167, 194, 0.6);
