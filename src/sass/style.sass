@@ -128,6 +128,9 @@ section
     .card
       @include mixins.card
 
+      &:hover
+        border-color: variables.$primary-color
+
       h3
         color: variables.$primary-color
         font-size: 2.4rem
@@ -157,7 +160,7 @@ section
           margin-bottom: 1rem
         h2
           width: 59rem
-          margin-bottom: 6rem
+          margin-bottom: 5rem
 
       .content
         p
@@ -179,14 +182,17 @@ section
     .col-b
       grid-area: B
       align-self: center
-      justify-self: end
-      width: 22.4rem
+      justify-self: center
+
+      img
+        width: 19rem
 
 // ========== FOOTER ==========
 #footer
   background: variables.$primary-color
   color: white
-  padding-block: 3rem
+  heigth: variables.$footer-heigth
+  padding: 2rem
 
   a
     color: white
@@ -197,8 +203,8 @@ section
 // ========== BACK TO TOP ==========
 #backToTopButton
   position: fixed
-  bottom: 1rem
-  right: 2.5rem
+  bottom: .5rem
+  right: 1rem
   opacity: 0
   visibility: hidden
   transition: 200ms
@@ -212,6 +218,7 @@ section
 // ========== QUIZ ==========
 .quiz-container
   text-align: left
+  height: calc(99.5% - variables.$nav-heigth)
 
   .quiz-header
     h3
@@ -226,5 +233,35 @@ section
       font-weight: 700
       margin-bottom: 4rem
 
+    ul
+      display: flex
+      align-items: flex-start
+      flex-direction: column
+      gap: 2rem
+      margin-bottom: 4rem
+
+      li
+        @include mixins.flex-center
+        gap: 2rem
+
+    label
+      color: variables.$light-01
+      font-size: 2.4rem
+      font-weight: 600
+    
+    a
+      color: variables.$details
+      font-weight: 700
+      line-height: 2rem
+      display: flex
+      align-items: center
+      gap: 1rem
+
   #submit
     @include mixins.button
+    margin-bottom: 12rem
+
+    &:hover
+      background: variables.$primary-color
+      color: white
+      border-color: variables.$primary-color

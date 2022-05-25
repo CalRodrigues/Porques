@@ -145,6 +145,9 @@ section header h2 {
   width: 45%;
   flex-grow: 1;
 }
+#diferenca .cards .card:hover {
+  border-color: #134D6D;
+}
 #diferenca .cards .card h3 {
   color: #134D6D;
   font-size: 2.4rem;
@@ -174,7 +177,7 @@ section header h2 {
 }
 #exercicio .wrapper .col-a header h2 {
   width: 59rem;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 #exercicio .wrapper .col-a .content p {
   color: #134D6D;
@@ -204,14 +207,17 @@ section header h2 {
 #exercicio .wrapper .col-b {
   grid-area: B;
   align-self: center;
-  justify-self: end;
-  width: 22.4rem;
+  justify-self: center;
+}
+#exercicio .wrapper .col-b img {
+  width: 19rem;
 }
 
 #footer {
   background: #134D6D;
   color: white;
-  padding-block: 3rem;
+  heigth: 8vh;
+  padding: 2rem;
 }
 #footer a {
   color: white;
@@ -222,8 +228,8 @@ section header h2 {
 
 #backToTopButton {
   position: fixed;
-  bottom: 1rem;
-  right: 2.5rem;
+  bottom: 0.5rem;
+  right: 1rem;
   opacity: 0;
   visibility: hidden;
   transition: 200ms;
@@ -238,6 +244,7 @@ section header h2 {
 
 .quiz-container {
   text-align: left;
+  height: calc(99.5% - 6vh);
 }
 .quiz-container .quiz-header h3 {
   color: #A2CBEB;
@@ -251,6 +258,32 @@ section header h2 {
   font-weight: 700;
   margin-bottom: 4rem;
 }
+.quiz-container .quiz-header ul {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.quiz-container .quiz-header ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.quiz-container .quiz-header label {
+  color: #75a7c2;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.quiz-container .quiz-header a {
+  color: #A2CBEB;
+  font-weight: 700;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .quiz-container #submit {
   background: white;
   color: #75a7c2;
@@ -262,6 +295,12 @@ section header h2 {
   padding: 1.2rem 3rem;
   display: inline-block;
   transition: background 300ms;
+  margin-bottom: 12rem;
+}
+.quiz-container #submit:hover {
+  background: #134D6D;
+  color: white;
+  border-color: #134D6D;
 }
 
 /*# sourceMappingURL=style.css.map */
