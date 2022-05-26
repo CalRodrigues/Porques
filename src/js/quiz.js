@@ -1,7 +1,7 @@
 const perguntas = [
   {
     numero: 'Questão 01',
-    questao: 'Maria foi embora rápido _____estava atrasada.',
+    questao: 'Maria não foi à escola _____ estava chovendo.',
     a: 'Porque',
     b: 'Por que',
     c: 'Porquê',
@@ -11,17 +11,17 @@ const perguntas = [
 
   {
     numero: 'Questão 02',
-    questao: 'Pedro perguntou a Tiago _____ ele estava feliz.',
+    questao: 'Estou tão feliz e não sei _____!',
     a: 'Porque',
     b: 'Por que',
     c: 'Porquê',
     d: 'Por quê',
-    correta: 'c'
+    correta: 'd'
   },
 
   {
     numero: 'Questão 03',
-    questao: '_____ o céu é azul?',
+    questao: 'Joana quis saber _____ Tiago estava triste.',
     a: 'Porque',
     b: 'Por que',
     c: 'Porquê',
@@ -31,27 +31,17 @@ const perguntas = [
 
   {
     numero: 'Questão 04',
-    questao: 'Joana venha ver algo. _____ Perguntou Joana',
+    questao: 'Todos estavam olhando para cima e ninguém sabia o _____.',
     a: 'Porque',
     b: 'Por que',
     c: 'Porquê',
     d: 'Por quê',
-    correta: 'd'
+    correta: 'c'
   },
 
   {
     numero: 'Questão 05',
-    questao: 'Maria foi embora rápido _____ estava atrasada.',
-    a: 'Porque',
-    b: 'Por que',
-    c: 'Porquê',
-    d: 'Por quê',
-    correta: 'd'
-  },
-
-  {
-    numero: 'Questão 06',
-    questao: 'Maria foi embora rápido _____ estava atrasada.',
+    questao: '_____ estava cansado, não foi ao cinema.',
     a: 'Porque',
     b: 'Por que',
     c: 'Porquê',
@@ -60,8 +50,18 @@ const perguntas = [
   },
 
   {
+    numero: 'Questão 06',
+    questao: 'A professora queria saber o _____ de ninguém ter feito a lição de casa.',
+    a: 'Porque',
+    b: 'Por que',
+    c: 'Porquê',
+    d: 'Por quê',
+    correta: 'c'
+  },
+
+  {
     numero: 'Questão 07',
-    questao: 'Maria foi embora rápido _____ estava atrasada.',
+    questao: '_____ não posso sair com meus amigos?',
     a: 'Porque',
     b: 'Por que',
     c: 'Porquê',
@@ -71,32 +71,32 @@ const perguntas = [
 
   {
     numero: 'Questão 08',
-    questao: 'Maria foi embora rápido _____ estava atrasada.',
+    questao: 'Pedro foi embora e nem disse _____.',
     a: 'Porque',
     b: 'Por que',
     c: 'Porquê',
     d: 'Por quê',
-    correta: 'c'
+    correta: 'd'
   },
 
   {
     numero: 'Questão 09',
-    questao: 'Maria foi embora rápido _____ estava atrasada.',
-    a: 'Porque',
-    b: 'Por que',
-    c: 'Porquê',
-    d: 'Por quê',
-    correta: 'c'
-  },
-
-  {
-    numero: 'Questão 10',
-    questao: 'Maria foi embora rápido _____ estava atrasada.',
+    questao: 'Acabei comprando a outra televisão _____ era a mais barata.',
     a: 'Porque',
     b: 'Por que',
     c: 'Porquê',
     d: 'Por quê',
     correta: 'a'
+  },
+
+  {
+    numero: 'Questão 10',
+    questao: 'Mateus não entende o _____ de tudo isto.',
+    a: 'Porque',
+    b: 'Por que',
+    c: 'Porquê',
+    d: 'Por quê',
+    correta: 'c'
   }
 ]
 
