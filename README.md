@@ -6,7 +6,6 @@ Um site desenvolvido para mostrar as diferenças entre o porque, por que, porqu�
 
 ### :camera: Imagem do Projeto:
 
-
 - - -
 
 ### :pushpin: Tecnologias/Ferramentas utilizadas:
@@ -27,6 +26,6 @@ Um site desenvolvido para mostrar as diferenças entre o porque, por que, porqu�
 
 ### :paperclip: Link do projeto:
 
-+ <a href="https://calrodrigues.github.io/CalculadoraMedia/" target="_blank">O Porquê dos Porques</a>
++ <a href="https://calrodrigues.github.io/porques/" target="_blank">O Porquê dos Porques</a>
 
 <p align="center">Feito com 💜 por <strong>Carol Rodrigues</strong></p>

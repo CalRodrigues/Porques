@@ -29,75 +29,75 @@ const perguntas = [
     correta: 'b'
   },
 
-  // {
-  //   numero: 'Questão 04',
-  //   questao: 'Todos estavam olhando para cima e ninguém sabia o _____.',
-  //   a: 'Porque',
-  //   b: 'Por que',
-  //   c: 'Porquê',
-  //   d: 'Por quê',
-  //   correta: 'c'
-  // },
+  {
+    numero: 'Questão 04',
+    questao: 'Todos estavam olhando para cima e ninguém sabia o _____.',
+    a: 'Porque',
+    b: 'Por que',
+    c: 'Porquê',
+    d: 'Por quê',
+    correta: 'c'
+  },
 
-  // {
-  //   numero: 'Questão 05',
-  //   questao: '_____ estava cansado, não foi ao cinema.',
-  //   a: 'Porque',
-  //   b: 'Por que',
-  //   c: 'Porquê',
-  //   d: 'Por quê',
-  //   correta: 'a'
-  // },
+  {
+    numero: 'Questão 05',
+    questao: '_____ estava cansado, não foi ao cinema.',
+    a: 'Porque',
+    b: 'Por que',
+    c: 'Porquê',
+    d: 'Por quê',
+    correta: 'a'
+  },
 
-  // {
-  //   numero: 'Questão 06',
-  //   questao: 'A professora queria saber o _____ de ninguém ter feito a lição de casa.',
-  //   a: 'Porque',
-  //   b: 'Por que',
-  //   c: 'Porquê',
-  //   d: 'Por quê',
-  //   correta: 'c'
-  // },
+  {
+    numero: 'Questão 06',
+    questao: 'A professora queria saber o _____ de ninguém ter feito a lição de casa.',
+    a: 'Porque',
+    b: 'Por que',
+    c: 'Porquê',
+    d: 'Por quê',
+    correta: 'c'
+  },
 
-  // {
-  //   numero: 'Questão 07',
-  //   questao: '_____ não posso sair com meus amigos?',
-  //   a: 'Porque',
-  //   b: 'Por que',
-  //   c: 'Porquê',
-  //   d: 'Por quê',
-  //   correta: 'b'
-  // },
+  {
+    numero: 'Questão 07',
+    questao: '_____ não posso sair com meus amigos?',
+    a: 'Porque',
+    b: 'Por que',
+    c: 'Porquê',
+    d: 'Por quê',
+    correta: 'b'
+  },
 
-  // {
-  //   numero: 'Questão 08',
-  //   questao: 'Pedro foi embora e nem disse _____.',
-  //   a: 'Porque',
-  //   b: 'Por que',
-  //   c: 'Porquê',
-  //   d: 'Por quê',
-  //   correta: 'd'
-  // },
+  {
+    numero: 'Questão 08',
+    questao: 'Pedro foi embora e nem disse _____.',
+    a: 'Porque',
+    b: 'Por que',
+    c: 'Porquê',
+    d: 'Por quê',
+    correta: 'd'
+  },
 
-  // {
-  //   numero: 'Questão 09',
-  //   questao: 'Acabei comprando a outra televisão _____ era a mais barata.',
-  //   a: 'Porque',
-  //   b: 'Por que',
-  //   c: 'Porquê',
-  //   d: 'Por quê',
-  //   correta: 'a'
-  // },
+  {
+    numero: 'Questão 09',
+    questao: 'Acabei comprando a outra televisão _____ era a mais barata.',
+    a: 'Porque',
+    b: 'Por que',
+    c: 'Porquê',
+    d: 'Por quê',
+    correta: 'a'
+  },
 
-  // {
-  //   numero: 'Questão 10',
-  //   questao: 'Mateus não entende o _____ de tudo isto.',
-  //   a: 'Porque',
-  //   b: 'Por que',
-  //   c: 'Porquê',
-  //   d: 'Por quê',
-  //   correta: 'c'
-  // }
+  {
+    numero: 'Questão 10',
+    questao: 'Mateus não entende o _____ de tudo isto.',
+    a: 'Porque',
+    b: 'Por que',
+    c: 'Porquê',
+    d: 'Por quê',
+    correta: 'c'
+  }
 ]
 
 const quiz = document.getElementById('quiz')
