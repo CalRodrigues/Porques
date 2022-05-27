@@ -29,75 +29,75 @@ const perguntas = [
     correta: 'b'
   },
 
-  {
-    numero: 'Questão 04',
-    questao: 'Todos estavam olhando para cima e ninguém sabia o _____.',
-    a: 'Porque',
-    b: 'Por que',
-    c: 'Porquê',
-    d: 'Por quê',
-    correta: 'c'
-  },
+  // {
+  //   numero: 'Questão 04',
+  //   questao: 'Todos estavam olhando para cima e ninguém sabia o _____.',
+  //   a: 'Porque',
+  //   b: 'Por que',
+  //   c: 'Porquê',
+  //   d: 'Por quê',
+  //   correta: 'c'
+  // },
 
-  {
-    numero: 'Questão 05',
-    questao: '_____ estava cansado, não foi ao cinema.',
-    a: 'Porque',
-    b: 'Por que',
-    c: 'Porquê',
-    d: 'Por quê',
-    correta: 'a'
-  },
+  // {
+  //   numero: 'Questão 05',
+  //   questao: '_____ estava cansado, não foi ao cinema.',
+  //   a: 'Porque',
+  //   b: 'Por que',
+  //   c: 'Porquê',
+  //   d: 'Por quê',
+  //   correta: 'a'
+  // },
 
-  {
-    numero: 'Questão 06',
-    questao: 'A professora queria saber o _____ de ninguém ter feito a lição de casa.',
-    a: 'Porque',
-    b: 'Por que',
-    c: 'Porquê',
-    d: 'Por quê',
-    correta: 'c'
-  },
+  // {
+  //   numero: 'Questão 06',
+  //   questao: 'A professora queria saber o _____ de ninguém ter feito a lição de casa.',
+  //   a: 'Porque',
+  //   b: 'Por que',
+  //   c: 'Porquê',
+  //   d: 'Por quê',
+  //   correta: 'c'
+  // },
 
-  {
-    numero: 'Questão 07',
-    questao: '_____ não posso sair com meus amigos?',
-    a: 'Porque',
-    b: 'Por que',
-    c: 'Porquê',
-    d: 'Por quê',
-    correta: 'b'
-  },
+  // {
+  //   numero: 'Questão 07',
+  //   questao: '_____ não posso sair com meus amigos?',
+  //   a: 'Porque',
+  //   b: 'Por que',
+  //   c: 'Porquê',
+  //   d: 'Por quê',
+  //   correta: 'b'
+  // },
 
-  {
-    numero: 'Questão 08',
-    questao: 'Pedro foi embora e nem disse _____.',
-    a: 'Porque',
-    b: 'Por que',
-    c: 'Porquê',
-    d: 'Por quê',
-    correta: 'd'
-  },
+  // {
+  //   numero: 'Questão 08',
+  //   questao: 'Pedro foi embora e nem disse _____.',
+  //   a: 'Porque',
+  //   b: 'Por que',
+  //   c: 'Porquê',
+  //   d: 'Por quê',
+  //   correta: 'd'
+  // },
 
-  {
-    numero: 'Questão 09',
-    questao: 'Acabei comprando a outra televisão _____ era a mais barata.',
-    a: 'Porque',
-    b: 'Por que',
-    c: 'Porquê',
-    d: 'Por quê',
-    correta: 'a'
-  },
+  // {
+  //   numero: 'Questão 09',
+  //   questao: 'Acabei comprando a outra televisão _____ era a mais barata.',
+  //   a: 'Porque',
+  //   b: 'Por que',
+  //   c: 'Porquê',
+  //   d: 'Por quê',
+  //   correta: 'a'
+  // },
 
-  {
-    numero: 'Questão 10',
-    questao: 'Mateus não entende o _____ de tudo isto.',
-    a: 'Porque',
-    b: 'Por que',
-    c: 'Porquê',
-    d: 'Por quê',
-    correta: 'c'
-  }
+  // {
+  //   numero: 'Questão 10',
+  //   questao: 'Mateus não entende o _____ de tudo isto.',
+  //   a: 'Porque',
+  //   b: 'Por que',
+  //   c: 'Porquê',
+  //   d: 'Por quê',
+  //   correta: 'c'
+  // }
 ]
 
 const quiz = document.getElementById('quiz')
@@ -109,6 +109,7 @@ const b_text = document.getElementById('b_texto')
 const c_text = document.getElementById('c_texto')
 const d_text = document.getElementById('d_texto')
 const submit = document.getElementById('submit')
+const quiz_list = document.getElementById('quiz-list')
 
 let currentQuiz = 0
 let score = 0
@@ -143,6 +144,17 @@ function respostaSelecionada() {
   return pergunta
 }
 
+function estilosQuiz() {
+  numero.innerHTML = 'Resultado'
+
+  numero.style.marginBottom = '8rem'
+  questao.style.marginBottom = '12rem'
+  questao.style.fontSize = '6rem'
+
+  quiz_list.style.display = 'none'
+  submit.style.display = 'none'
+}
+
 submit.addEventListener('click', () => {
   const pergunta = respostaSelecionada()
 
@@ -157,15 +169,14 @@ submit.addEventListener('click', () => {
       loadQuiz()
     } else {
       if (score == 1) {
-        numero.innerHTML = 'Resultado'
-        questao.innerHTML = `Você acertou ${score} pergunta.`
-        document.getElementById('quiz-list').style.display = 'none'
-        submit.style.display = 'none'
-      } else {
-        numero.innerHTML = 'Resultado'
-        questao.innerHTML = `Você acertou ${score} perguntas.`
-        document.getElementById('quiz-list').style.display = 'none'
-        submit.style.display = 'none'
+        estilosQuiz()
+        questao.innerHTML = `Você acertou ${score} pergunta. <br> Reveja o material...`
+      } else if (score >= 2 && score <= 5) {
+        estilosQuiz()
+        questao.innerHTML = `Você acertou ${score} perguntas. <br> Você pode fazer melhor...` 
+      } else if (score >= 6 && score == 10) {
+        estilosQuiz()
+        questao.innerHTML = `Você acertou ${score} perguntas. <br> Parabéns!!!`
       }
     }
   }

@@ -124,18 +124,18 @@ section header h2 {
   line-height: 110%;
 }
 
-#diferenca {
+#qual_usar_section {
   background: white;
 }
-#diferenca header h4 {
+#qual_usar_section header h4 {
   margin-bottom: 6rem;
 }
-#diferenca .cards {
+#qual_usar_section .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
 }
-#diferenca .cards .card {
+#qual_usar_section .cards .card {
   background: #F7F9FA;
   text-align: left;
   border: 1px solid rgba(117, 167, 194, 0.6);
@@ -145,41 +145,41 @@ section header h2 {
   width: 45%;
   flex-grow: 1;
 }
-#diferenca .cards .card:hover {
+#qual_usar_section .cards .card:hover {
   border-color: #134D6D;
 }
-#diferenca .cards .card h3 {
+#qual_usar_section .cards .card h3 {
   color: #134D6D;
   font-size: 2.4rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
 }
-#diferenca .cards .card p {
+#qual_usar_section .cards .card p {
   color: #134D6D;
   margin-bottom: 1rem;
 }
-#diferenca .cards .card p:last-child {
+#qual_usar_section .cards .card p:last-child {
   margin-bottom: 0;
 }
 
-#exercicio .wrapper {
+#quiz_section .wrapper {
   display: grid;
   grid-template-columns: 67.9rem 1fr;
   grid-template-areas: "A B";
 }
-#exercicio .wrapper .col-a {
+#quiz_section .wrapper .col-a {
   grid-area: A;
   text-align: left;
 }
-#exercicio .wrapper .col-a header h4 {
+#quiz_section .wrapper .col-a header h4 {
   margin-bottom: 1rem;
 }
-#exercicio .wrapper .col-a header h2 {
+#quiz_section .wrapper .col-a header h2 {
   width: 59rem;
   margin-bottom: 5rem;
 }
-#exercicio .wrapper .col-a .content p {
+#quiz_section .wrapper .col-a .content p {
   color: #134D6D;
   font-size: 4.8rem;
   font-weight: 700;
@@ -187,7 +187,7 @@ section header h2 {
   margin-bottom: 6rem;
   width: 63.2rem;
 }
-#exercicio .wrapper .col-a .content .button {
+#quiz_section .wrapper .col-a .content .button {
   background: white;
   color: #75a7c2;
   font-weight: 700;
@@ -199,17 +199,17 @@ section header h2 {
   display: inline-block;
   transition: background 300ms;
 }
-#exercicio .wrapper .col-a .content .button:hover {
+#quiz_section .wrapper .col-a .content .button:hover {
   background: #134D6D;
   color: white;
   border-color: #134D6D;
 }
-#exercicio .wrapper .col-b {
+#quiz_section .wrapper .col-b {
   grid-area: B;
   align-self: center;
   justify-self: center;
 }
-#exercicio .wrapper .col-b img {
+#quiz_section .wrapper .col-b img {
   width: 19rem;
 }
 
@@ -244,7 +244,7 @@ section header h2 {
 
 .quiz-container {
   text-align: left;
-  height: calc(99.5% - 6vh);
+  height: 92vh;
 }
 .quiz-container .quiz-header h3 {
   color: #A2CBEB;

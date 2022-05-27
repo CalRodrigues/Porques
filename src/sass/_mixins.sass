@@ -16,6 +16,10 @@
   padding:  1.2rem 3rem
   display: inline-block
   transition: background 300ms
+  &:hover
+    background: variables.$primary-color
+    color: white
+    border-color: variables.$primary-color
   
 @mixin cards
   display: flex
@@ -31,3 +35,5 @@
   padding: 3rem
   width: 45%
   flex-grow: 1
+  &:hover
+    border-color: variables.$primary-color
