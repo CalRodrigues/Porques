@@ -61,7 +61,7 @@ section header h2 {
 }
 
 .menu {
-  heigth: 6vh;
+  height: 6vh;
 }
 .menu .wrapper {
   display: flex;
@@ -216,7 +216,7 @@ section header h2 {
 #footer {
   background: #134D6D;
   color: white;
-  heigth: 8vh;
+  height: 7vh;
   padding: 2rem;
 }
 #footer a {
@@ -244,7 +244,7 @@ section header h2 {
 
 .quiz-container {
   text-align: left;
-  height: 92vh;
+  height: 93vh;
 }
 .quiz-container .quiz-header h3 {
   color: #A2CBEB;
