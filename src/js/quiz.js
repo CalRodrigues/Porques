@@ -176,7 +176,7 @@ submit.addEventListener('click', () => {
         questao.innerHTML = `Você acertou ${score} perguntas. <br> Você pode fazer melhor...` 
       } else if (score >= 6 && score == 10) {
         estilosQuiz()
-        questao.innerHTML = `Você acertou ${score} perguntas. <br> Parabéns!!!`
+        questao.innerHTML = `Você acertou ${score} perguntas. <br> Parabéns!`
       }
     }
   }
