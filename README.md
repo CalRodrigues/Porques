@@ -7,8 +7,8 @@ Um site desenvolvido para mostrar as diferenças entre o porque, por que, porqu�
 ## :pushpin: Tecnologias/Ferramentas Utilizadas:
 
 + HTML
-+ SASS/CSS
-+ Javascript
++ CSS/SASS
++ JavaScript
 + Figma
 
 ## :pencil2: Conceitos Aplicados:
@@ -18,7 +18,7 @@ Um site desenvolvido para mostrar as diferenças entre o porque, por que, porqu�
 
 ## :link: Link do Projeto:
 
-+ <a href="https://calrodrigues.github.io/porques/" target="_blank">O Porquê dos Porques</a>
++ <a href="https://calrodrigues.github.io/Porques/">O Porquê dos Porques</a>
 
 ## :hammer: Status do Projeto:
 
